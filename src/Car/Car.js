@@ -1,5 +1,7 @@
-export default () =>(
+export default props =>(
     <div>
-        <h2>This is car component <strong>test</strong></h2>
+        <h2>Car name: {props.name} </h2>
+        <p>Year: <strong>{props.year}</strong></p>
+        {props.children}
     </div>
 )
